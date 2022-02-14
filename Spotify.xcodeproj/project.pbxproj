@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		B272488727A454BD0005F2C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B272488627A454BD0005F2C1 /* AppDelegate.swift */; };
-		B272488927A454BD0005F2C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B272488827A454BD0005F2C1 /* SceneDelegate.swift */; };
-		B272488B27A454BD0005F2C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B272488A27A454BD0005F2C1 /* ViewController.swift */; };
-		B272488E27A454BD0005F2C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B272488C27A454BD0005F2C1 /* Main.storyboard */; };
+		B272488B27A454BD0005F2C1 /* TitleBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B272488A27A454BD0005F2C1 /* TitleBarController.swift */; };
 		B272489027A454C00005F2C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B272488F27A454C00005F2C1 /* Assets.xcassets */; };
 		B272489327A454C00005F2C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B272489127A454C00005F2C1 /* LaunchScreen.storyboard */; };
+		B27248A127A5186E0005F2C1 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27248A027A5186E0005F2C1 /* Container.swift */; };
+		B27248A427A569FD0005F2C1 /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27248A327A569FD0005F2C1 /* Factories.swift */; };
+		B27248A727A6EA180005F2C1 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27248A627A6EA180005F2C1 /* HomeController.swift */; };
+		B27248AA27A6EAFC0005F2C1 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27248A927A6EAFC0005F2C1 /* MenuBar.swift */; };
+		B27248AD27A6F76D0005F2C1 /* PlaylistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27248AC27A6F76D0005F2C1 /* PlaylistCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B272488327A454BD0005F2C1 /* Spotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B272488627A454BD0005F2C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B272488827A454BD0005F2C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B272488A27A454BD0005F2C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B272488D27A454BD0005F2C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B272488A27A454BD0005F2C1 /* TitleBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleBarController.swift; sourceTree = "<group>"; };
 		B272488F27A454C00005F2C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B272489227A454C00005F2C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B272489427A454C00005F2C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B27248A027A5186E0005F2C1 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		B27248A327A569FD0005F2C1 /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
+		B27248A627A6EA180005F2C1 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		B27248A927A6EAFC0005F2C1 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		B27248AC27A6F76D0005F2C1 /* PlaylistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		B272488527A454BD0005F2C1 /* Spotify */ = {
 			isa = PBXGroup;
 			children = (
+				B272489D27A455730005F2C1 /* Files */,
 				B272488627A454BD0005F2C1 /* AppDelegate.swift */,
-				B272488827A454BD0005F2C1 /* SceneDelegate.swift */,
-				B272488A27A454BD0005F2C1 /* ViewController.swift */,
-				B272488C27A454BD0005F2C1 /* Main.storyboard */,
+				B272488A27A454BD0005F2C1 /* TitleBarController.swift */,
+				B27248A027A5186E0005F2C1 /* Container.swift */,
+				B27248A327A569FD0005F2C1 /* Factories.swift */,
+				B27248A627A6EA180005F2C1 /* HomeController.swift */,
+				B27248A927A6EAFC0005F2C1 /* MenuBar.swift */,
+				B27248AC27A6F76D0005F2C1 /* PlaylistCell.swift */,
+			);
+			path = Spotify;
+			sourceTree = "<group>";
+		};
+		B272489D27A455730005F2C1 /* Files */ = {
+			isa = PBXGroup;
+			children = (
 				B272488F27A454C00005F2C1 /* Assets.xcassets */,
 				B272489127A454C00005F2C1 /* LaunchScreen.storyboard */,
 				B272489427A454C00005F2C1 /* Info.plist */,
 			);
-			path = Spotify;
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +143,6 @@
 			files = (
 				B272489327A454C00005F2C1 /* LaunchScreen.storyboard in Resources */,
 				B272489027A454C00005F2C1 /* Assets.xcassets in Resources */,
-				B272488E27A454BD0005F2C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +153,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B272488B27A454BD0005F2C1 /* ViewController.swift in Sources */,
+				B272488B27A454BD0005F2C1 /* TitleBarController.swift in Sources */,
+				B27248AD27A6F76D0005F2C1 /* PlaylistCell.swift in Sources */,
+				B27248A127A5186E0005F2C1 /* Container.swift in Sources */,
+				B27248AA27A6EAFC0005F2C1 /* MenuBar.swift in Sources */,
+				B27248A427A569FD0005F2C1 /* Factories.swift in Sources */,
 				B272488727A454BD0005F2C1 /* AppDelegate.swift in Sources */,
-				B272488927A454BD0005F2C1 /* SceneDelegate.swift in Sources */,
+				B27248A727A6EA180005F2C1 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B272488C27A454BD0005F2C1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B272488D27A454BD0005F2C1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B272489127A454C00005F2C1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
